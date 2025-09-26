@@ -1,0 +1,76 @@
+Metadata-Version: 2.4
+Name: etl_package
+Version: 0.1.0
+Summary: Un package ETL modulaire et réutilisable pour les projets de data engineering
+Author: Fadel ADAM
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: sqlalchemy>=1.4.0
+Requires-Dist: psycopg2-binary>=2.8.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: python-dotenv>=0.19.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ETL Package Modulaire
+
+Un package Python complet et modulaire pour les projets ETL (Extract, Transform, Load). Conçu pour être réutilisable et adaptable à différents cas d'usage.
+
+## 🚀 Fonctionnalités
+
+- **Extraction** : Web scraping, fichiers (CSV, Excel, JSON), APIs
+- **Transformation** : Gestion des valeurs manquantes, encodage, validation, feature engineering
+- **Chargement** : PostgreSQL, CSV, Parquet, Excel, JSON
+- **Modulaire** : Architecture claire et extensible
+- **Configurable** : Paramètres via variables d'environnement
+
+
+## 📦 Installation
+
+1. Cloner le repository :
+```bash
+git clone <repository-url>
+cd etl_package
+
+#
+
+## 🔧 Personnalisation
+Ajouter une nouvelle source d'extraction
+Créer une nouvelle classe dans extract/
+
+Implémenter les méthodes nécessaires
+
+Modifier ETLPipeline.extract()
+
+Ajouter une nouvelle transformation
+Créer un module dans transform/
+
+Implémenter les fonctions de transformation
+
+Ajouter au pipeline dans transformations
+
+Changer la destination
+Modifier le paramètre destination dans run_pipeline() :
+
+postgres : Base de données PostgreSQL
+
+csv : Fichier CSV
+
+parquet : Fichier Parquet

@@ -1,0 +1,16 @@
+# Environnements virtuels
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Fichiers de configuration sensibles
+.env
+donnees_scrapees.csv
+
+# Dossiers de sortie et logs
+output/
+*.log   
+logs/
+data/output/
+data/intermediate/
